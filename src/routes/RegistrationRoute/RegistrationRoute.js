@@ -16,10 +16,10 @@ class RegistrationRoute extends Component {
   render() {
     return (
       <section>
-        <p>
+        {/* <p>
           Practice learning a language with the spaced reptition revision technique.
-        </p>
-        <h2>Sign up</h2>
+        </p> */}
+        
         <RegistrationForm
           onRegistrationSuccess={this.handleRegistrationSuccess}
         />

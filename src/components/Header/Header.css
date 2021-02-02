@@ -1,0 +1,29 @@
+.register-header{
+  background-image:url('https://images.unsplash.com/photo-1541401154946-62f8d84bd284?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=967&q=80');
+  padding-bottom:25px;
+  color: #062726;
+}
+
+
+.header{
+  background-color: rgba(255, 255, 255, 0.5);
+  margin-right:10%;
+  margin-left: 10%;
+  text-align: center;
+  padding:75px;
+  font-family: 'Playfair Display', serif; 
+  font-size: 50px;
+  text-decoration: none;
+  color: #062726;
+
+}
+
+
+a{
+  text-decoration: none;
+  color: #062726;
+}
+a:visited{
+  text-decoration: none;
+  color: #062726;
+}
