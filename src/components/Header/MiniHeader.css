@@ -1,0 +1,24 @@
+.mini-header{
+  display: flex;
+  margin-bottom:30px;
+  margin-left:50%;
+  position: relative;
+  color:black;
+  
+
+}
+
+.main-header{
+  text-align: center;
+  color:black;
+  font-family: 'Montserrat', sans-serif;
+  font-size:xx-large;
+}
+
+
+
+.title2{
+  font-family: 'Montserrat', sans-serif;
+  font-size:xx-large;
+  color:black;
+}

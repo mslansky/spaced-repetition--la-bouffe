@@ -5,10 +5,12 @@ import PrivateRoute from '../PrivateRoute/PrivateRoute'
 import PublicOnlyRoute from '../PublicOnlyRoute/PublicOnlyRoute'
 import RegistrationRoute from '../../routes/RegistrationRoute/RegistrationRoute'
 import LoginRoute from '../../routes/LoginRoute/LoginRoute'
-import DashboardRoute from '../../routes/DashboardRoute/DashboardRoute'
+import MiniHeader from '../Header/MiniHeader.js'
 import LearningRoute from '../../routes/LearningRoute/LearningRoute'
 import NotFoundRoute from '../../routes/NotFoundRoute/NotFoundRoute'
+import Main from '../../components/Main/Main.js'
 import './App.css'
+ 
 
 export default class App extends Component {
   state = { hasError: false }
@@ -22,7 +24,19 @@ export default class App extends Component {
     const { hasError } = this.state
     return (
       <div className='App'>
-        <Header />
+        <Switch>
+            <PublicOnlyRoute
+              path={'/register'}
+              component={Header}
+            />
+            <PublicOnlyRoute
+              path={'/login'}
+              component={Header}
+            />
+            <Route
+              component={MiniHeader}
+            />
+        </Switch>
         <main>
           {hasError && (
             <p>There was an error! Oh no!</p>
@@ -31,7 +45,7 @@ export default class App extends Component {
             <PrivateRoute
               exact
               path={'/'}
-              component={DashboardRoute}
+              component={Main}
             />
             <PrivateRoute
               path={'/learn'}

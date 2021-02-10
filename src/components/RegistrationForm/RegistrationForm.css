@@ -77,9 +77,11 @@ BUTTON CSS */
   font-size:1.5rem;
   border:2px solid #4A001F;
   border-radius:100px;
-  width:80px;
-  height:80px;
-  padding:5px;
+  width:150px;
+  background-color: #2E0219;
+   box-shadow: 0px 5px 5px rgba(0,0,0,0.3);
+  color: #F4EDFD;
+  transition:.3s;
   
   transition: .5s cubic-bezier(0.68, -0.55, 0.265, 1.55);
 
