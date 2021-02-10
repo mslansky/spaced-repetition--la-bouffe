@@ -1,24 +1,50 @@
+.bg{ 
+  background-image: url('https://images.unsplash.com/photo-1596241913274-fd9f65e3a2b5?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80');
+  
+  height: 100vh;
+
+ 
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  
+  
+ 
+}
+
 .mini-header{
-  display: flex;
-  margin-bottom:30px;
-  margin-left:50%;
+ 
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+
+
+
   position: relative;
-  color:black;
+  color:white;
+  background-color:rgba(74, 0, 31, .8);
+
+  padding-bottom: 15px;
+  padding-top:10px;
+
+  border-radius: 8px;
   
 
 }
 
 .main-header{
   text-align: center;
-  color:black;
-  font-family: 'Montserrat', sans-serif;
-  font-size:xx-large;
+  color:whie;
+  font-family: 'Sen', sans-serif;
+  font-size:40px;
 }
 
 
 
 .title2{
-  font-family: 'Montserrat', sans-serif;
-  font-size:xx-large;
-  color:black;
+  font-family: 'Sen', sans-serif;
+  font-size:70px;
+  color:white;
 }
+

@@ -69,9 +69,6 @@ class Main extends Component {
         {/* <WordList data={this.context.words} /> */}
        </div>
 
-        {/* <div className="imgQuiz">
-          <img src="https://images.unsplash.com/photo-1569072712109-6206fa3505b4?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=675&q=80" alt="blue walled restaraunt with brown chairs"></img>
-        </div> */}
 
 
       </div>

@@ -40,6 +40,7 @@ class MiniHeader extends Component {
 
   render() {
     return (
+      <div className="bg">
       <div className="mini-header">
 
         <div className="main-header">
@@ -48,6 +49,8 @@ class MiniHeader extends Component {
             ? this.renderLogoutLink()
             : this.renderLoginLink()}
         </div>
+        
+      </div>
       </div>
     );
   }
