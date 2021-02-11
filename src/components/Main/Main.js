@@ -5,24 +5,24 @@ import TokenService from '../../services/token-service'
 import UserContext from '../../contexts/UserContext';
 import './Main.css';
 
-
-
-// function WordList (props) {
-
-//   const rows = props.data.map((w) => {
-//     return (
-//       <li key={w.id}>
-//         <h4>{w.original}</h4>
-//         <p>correct answer count: <span className="correct">{w.correct_count}</span></p>
-//         <p>incorrect answer count: <span className="incorrect">{w.incorrect_count}</span></p>
-//       </li>
-//     );
-//   });
-
-//   return (
-//     <ul className="WordList">{ rows }</ul>
-//   );
-// }
+const Words = (props) => {
+  if(!props.words) {
+    return "";
+  }
+  return (
+    <ul>
+      {props.words.map((word) => {
+        return (
+          <div key={word.id}>
+            <li className ="word">{word.original}</li>
+            <li className = "correctWord">Correct: {word.correct_count}</li>
+            <li className = "incorrectWord">Incorrect: {word.incorrect_count}</li>
+          </div>
+        );
+      })}
+    </ul>
+  )
+}
 
 class Main extends Component {
 
@@ -36,11 +36,9 @@ class Main extends Component {
       }
     })
     .then((res) => {
-
       if (!res.ok) {
         return res.json().then(e => Promise.reject(e))
       }
-
       return res.json();
     })
     .then((json) => {
@@ -53,6 +51,7 @@ class Main extends Component {
   }
 
   render() {
+    console.log(this.context); //TODO
     return (
       <div className="Main">
 
@@ -61,12 +60,10 @@ class Main extends Component {
         <Link to="/Quiz"><button className="mainButton">Begin Quiz!</button></Link>
         </div>
 
-        {/* <p>Total correct answers: {this.context.language.total_score}</p> */}
-        
-
        <div className="sideNav">
+         <p>Current Score: {this.context.language ? this.context.language.total_score : ""}</p>
         <p>Words To Practice:</p>
-        {/* <WordList data={this.context.words} /> */}
+        <Words words={this.context.words} />
        </div>
 
 

@@ -1,6 +1,4 @@
 
-
-
 .quizStart{
   flex-direction: column;
   justify-content: center;
@@ -11,33 +9,28 @@
   left: 50%;
   -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
-  
-  
-  
 }
 
 
 
 .sideNav{
   height: 100%; 
-  width: 180px; 
+  width: 250px; 
   position: fixed; 
   z-index: 1; 
   top: 0; 
   left: 0;
   background-color: #062726;
-  
   overflow-x: hidden; 
   padding-top: 0px;
 }
 
 .sideNav p{
-  padding: 4px 8px 6px 16px;
+  padding: 4px 12px 6px 16px;
   text-decoration: none;
   font-family: 'Montserrat', sans-serif;
   font-size: 25px;
   color: white;
-  
 }
 
 
@@ -53,9 +46,25 @@
   transition:.3s;
   transition: .5s cubic-bezier(0.68, -0.55, 0.265, 1.55);
   margin-top:25px;
- 
   position: relative;
+}
 
+.word{
+  font-family: 'Montserrat', sans-serif;
+  color:white;
+}
+
+.correctWord{
+  font-family: 'Montserrat', sans-serif;
+  color:#01A7C2;
+  list-style-type:none;
 
 }
 
+.incorrectWord{
+  font-family: 'Montserrat', sans-serif;
+  list-style-type:none;
+  color:red;
+
+  padding-bottom: 30px;
+}

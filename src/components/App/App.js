@@ -8,7 +8,8 @@ import LoginRoute from '../../routes/LoginRoute/LoginRoute'
 import MiniHeader from '../Header/MiniHeader.js'
 import LearningRoute from '../../routes/LearningRoute/LearningRoute'
 import NotFoundRoute from '../../routes/NotFoundRoute/NotFoundRoute'
-import Main from '../../components/Main/Main.js'
+import DashboardRoute from '../../routes/DashboardRoute/DashboardRoute.js'
+
 import './App.css'
  
 
@@ -45,10 +46,10 @@ export default class App extends Component {
             <PrivateRoute
               exact
               path={'/'}
-              component={Main}
+              component={DashboardRoute}
             />
             <PrivateRoute
-              path={'/learn'}
+              path={'/Quiz'}
               component={LearningRoute}
             />
             <PublicOnlyRoute
