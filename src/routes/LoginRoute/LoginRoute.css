@@ -1,0 +1,13 @@
+.demo{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.demolog{
+  text-align: center;
+  font-family: 'Playfair Display', serif; 
+  color: #062726;
+  font-size: 20px;
+
+}

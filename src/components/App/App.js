@@ -12,6 +12,9 @@ import DashboardRoute from '../../routes/DashboardRoute/DashboardRoute.js'
 
 import './App.css'
  
+const Empty = (props) => {
+  return '';
+}
 
 export default class App extends Component {
   state = { hasError: false }
@@ -33,6 +36,10 @@ export default class App extends Component {
             <PublicOnlyRoute
               path={'/login'}
               component={Header}
+            />
+            <PrivateRoute
+              path={'/Quiz'}
+              component={Empty}
             />
             <Route
               component={MiniHeader}

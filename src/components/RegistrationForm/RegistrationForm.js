@@ -85,7 +85,15 @@ class RegistrationForm extends Component {
             Sign up
           </Button>
           {' '}
-          <Link to='/login'>Already have an account?</Link>
+          <div className="logflex">
+            <div className="accountflex">
+              <Link to='/login'>Already have an account? </Link>
+            </div>
+            <div className="demoflex">
+              <Link to='/login'> Want a Demonstration?</Link>
+            </div>
+          </div>
+          
         </footer>
       </form>
       </div>

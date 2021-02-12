@@ -12,11 +12,12 @@
   text-align: center;
   padding:75px;
   font-family: 'Playfair Display', serif; 
-  font-size: 50px;
+  font-size: 20px;
   text-decoration: none;
   color: #062726;
 
 }
+
 
 
 a{
@@ -26,4 +27,25 @@ a{
 a:visited{
   text-decoration: none;
   color: #062726;
+}
+
+.log-left{
+  text-align: center;
+  margin-right: 10px;
+}
+
+
+@media screen and (min-width: 700px) {
+  .register-header{
+    padding-bottom:25px;
+  }
+
+  .header{
+    font-size: 50px;
+  }
+
+  .log-left{
+    margin-right:45px;
+  }
+
 }

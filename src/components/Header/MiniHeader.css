@@ -5,11 +5,16 @@
 
  
   background-position: center;
-  background-repeat: no-repeat;
+  background-repeat: repeat;
   background-size: cover;
   
   
  
+}
+
+#logg{
+
+color:white;
 }
 
 .mini-header{
@@ -17,7 +22,7 @@
   display: block;
   margin-left: auto;
   margin-right: auto;
-  width: 50%;
+  width: 100%;
 
 
 
@@ -44,7 +49,22 @@
 
 .title2{
   font-family: 'Playfair Display', serif; 
-  font-size:70px;
+  font-size:40px;
   color:white;
 }
 
+@media screen and (min-width: 800px) {
+
+  .mini-header{
+    width: 50%;
+  }
+
+
+  .bg{
+    background-repeat: no-repeat;
+  }
+
+  .title2{
+    font-size:70px;
+  }
+}

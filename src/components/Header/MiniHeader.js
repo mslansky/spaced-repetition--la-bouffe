@@ -20,7 +20,7 @@ class MiniHeader extends Component {
         <nav>
           <Link
             onClick={this.handleLogoutClick}
-            to='/login'>
+            to='/login' id="logg">
             Logout
           </Link>
         </nav>

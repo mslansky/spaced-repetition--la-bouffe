@@ -10,8 +10,8 @@
 
 .name{
   font-family: 'Playfair Display', serif;
-  font-size: 23px;
-  margin-right:30px;
+  font-size: 18px;
+  margin-right:10px;
   padding-right:28px;
   margin-top:10px;
 }
@@ -22,15 +22,16 @@
   border: 3px solid #4A001F;
   border-radius: 8px;
   box-sizing: border-box;
-  padding: 12px 20px;
+  padding: 8px 16px;
   margin-top:10px;
+  margin-bottom: 10px;
   
 }
 
 .username{
   font-family: 'Playfair Display', serif;
-  font-size: 23px;
-  margin-right:30px;
+  font-size: 18px;
+  margin-right:10px;
   margin-top:10px;
   
 }
@@ -42,14 +43,15 @@
   border: 3px solid #4A001F;
   border-radius: 8px;
   box-sizing: border-box;
-  padding: 12px 20px;
+  padding: 8px 16px;
   margin-top:10px;
+  margin-bottom: 10px;
 }
 
 .password{
   font-family: 'Playfair Display', serif;
-  font-size: 23px;
-  margin-right:30px;
+  font-size: 18px;
+  margin-right:10px;
   padding-right:4px;
   margin-top:10px;
 }
@@ -60,8 +62,9 @@
   border: 3px solid #4A001F;
   border-radius: 8px;
   box-sizing: border-box;
-  padding: 12px 20px;
+  padding: 8px 16px;
   margin-top:10px;
+ 
   
 }
 
@@ -74,10 +77,10 @@
 BUTTON CSS */
 .signup{
   color: #4A001F;
-  font-size:1.5rem;
+  font-size:1.0rem;
   border:2px solid #4A001F;
   border-radius:100px;
-  width:150px;
+  width:100px;
   background-color: #2E0219;
    box-shadow: 0px 5px 5px rgba(0,0,0,0.3);
   color: #F4EDFD;
@@ -86,7 +89,8 @@ BUTTON CSS */
   transition: .5s cubic-bezier(0.68, -0.55, 0.265, 1.55);
 
   margin-top:25px;
-  margin-right:30px;
+  margin-right:45px;
+  margin-bottom: 25px;
  
 }
 .signup:hover{
@@ -102,3 +106,37 @@ BUTTON CSS */
   transition: .05s
 }
 
+@media screen and (min-width: 700px) {
+  .signup{
+    font-size:1.5rem;
+    width:150px;
+  }
+
+  .password-input{
+    padding: 12px 20px;
+  }
+
+  .username-input{
+    padding: 12px 20px;
+  }
+
+  .name-input{
+    padding: 12px 20px;
+  }
+  .name{
+    font-size: 23px;
+    margin-right:30px;
+  }
+  .username{
+    font-size: 23px;
+    margin-right:30px;
+  }
+  .password{
+    font-size: 23px;
+    margin-right:30px;
+  }
+
+  .logflex{
+    font-size:20px;
+  }
+}

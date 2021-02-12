@@ -1,0 +1,136 @@
+.quizPage{
+  background-image:url('https://images.unsplash.com/photo-1569864358642-9d1684040f43?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80');
+  height: 100vh;
+
+  background-color: lightblue;
+  background-position: center;
+  background-repeat: repeat;
+  
+  
+}
+
+.quizbox{
+  display: block;
+  margin-left: 25px;
+  margin-right: 35px;
+  
+  width: 70%;
+  height:70%;
+
+  position: relative;
+  color:white;
+  background-color:rgba(74, 0, 31, .8);
+
+  padding-bottom: 65px;
+  padding-top:10px;
+  padding-left:35px;
+  padding-right:35px;
+
+  border-radius: 8px;
+
+  text-align: center;
+  color:whie;
+  font-family: 'Playfair Display', serif; 
+  font-size:25px;
+}
+
+.submit{
+  color: #4A001F;
+  font-size:1.0rem;
+  border:2px solid #4A001F;
+  border-radius:100px;
+  width:120px;
+  background-color: #2E0219;
+   box-shadow: 0px 5px 5px rgba(0,0,0,0.3);
+  color: #F4EDFD;
+  transition:.3s;
+  transition: .5s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  margin-top:35px;
+  margin-left: 15px;
+  
+  position: relative;
+}
+
+.quiz-input{
+  margin-top:10px;
+  width:180px;
+  height:20px;
+  border-radius:6px;
+}
+
+.dashlink{
+  color: #4A001F;
+  font-size:1.0rem;
+  border:4px solid #4A001F;
+  border-radius:100px;
+  width:200px;
+  background-color: white;
+   box-shadow: 0px 5px 5px rgba(0,0,0,0.3);
+  color: #F4EDFD;
+  transition:.3s;
+  transition: .5s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  margin-top:35px;
+  margin-left: 15px;
+  
+  position: relative;
+}
+
+.NEXT{
+  color: #4A001F;
+  font-size:1.0rem;
+  border:2px solid #4A001F;
+  border-radius:100px;
+  width:200px;
+  background-color: #2E0219;
+   box-shadow: 0px 5px 5px rgba(0,0,0,0.3);
+  color: #F4EDFD;
+  transition:.3s;
+  transition: .5s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  margin-top:35px;
+  margin-left: 15px;
+  
+  position: relative;
+}
+
+
+@media screen and (min-width: 1000px) {
+  .quizPage{
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .quizbox{
+    padding-bottom: 85px;
+  }
+
+}
+
+
+@media screen and (min-width: 700px) {
+  .quizbox{
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    font-size:25px;
+    
+  }
+
+  .dashlink{
+    font-size:1.5rem;
+  }
+
+
+  .submit{
+    font-size:1.5rem;
+  }
+  .NEXT{
+    font-size:1.5rem;
+  }
+
+  .quiz-input{
+    width:180px;
+    height:30px;
+  }
+
+}
