@@ -41,4 +41,4 @@ Express.js
 Node.js
 
 Link to Server-Side Code: https://github.com/mslansky/spaced-rep-la-bouffe-api
-Link to Heroku Server-Side Code: https://infinite-lowlands-45400.herokuapp.com/
+Link to Heroku Server-Side Code: https://spacedrep-la-bouffe.herokuapp.com/
