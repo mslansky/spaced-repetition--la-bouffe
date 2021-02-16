@@ -57,7 +57,7 @@ class Main extends Component {
 
         <div className="quizStart">
         
-        <Link to="/Quiz"><button className="mainButton">Begin Quiz!</button></Link>
+        <Link to="/Quiz"><button className="mainButton">Begin French Quiz!</button></Link>
         </div>
 
        <div className="sideNav">
